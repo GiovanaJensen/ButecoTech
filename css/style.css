@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+
+/*
+font-family: 'Archivo', sans-serif;
+font-family: roc-grotesk, sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    font-family: 'Archivo', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 16px 104px 15.5px 104px;
+}
+
+header h1{
+    height: 59px;
+    width: 210px;
+    background-image: url(imgs/Logo.png);
+    text-indent: -9999px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 26px;
+}
+
+nav ul li a{
+    color: #999;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    padding: 0 10px;
+}
+
+nav ul li a.ativo{
+    font-weight: bold;
+    color: #000;
+   
+}
+
+nav ul li:last-child{
+    margin-left: 84px;
+}
+
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #307FE2;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
