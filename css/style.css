@@ -20,10 +20,10 @@ header{
     padding: 16px 104px 15.5px 104px;
 }
 
-header h1{
-    height: 59px;
-    width: 210px;
-    background-image: url(imgs/Logo.png);
+h1{
+    height: 60px;
+    width: 212px;
+    background: url("../imgs/logo.svg");
     text-indent: -9999px;
 }
 
