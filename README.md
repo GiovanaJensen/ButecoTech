@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Buteco Tech é um site realizado para um podcast. Acesse o site clicando [neste link](https://explorer-lab-01-tau-two.vercel.app/)
+O Buteco Tech é um site realizado para um podcast. Acesse o site clicando [neste link](https://buteco-tech.vercel.app/)
 
 ## 🔖 Layout
 
