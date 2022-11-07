@@ -5,10 +5,25 @@ font-family: 'Archivo', sans-serif;
 font-family: roc-grotesk, sans-serif;
 */
 
+:root {
+    --corPrimaria:#FFD140;
+    --corSecundaria:#101920;
+    --corTerciaria:#3080E3;
+    --corQuartenaria:#FEF9F3;
+    --preenchimentoPadrao: 0 216px;
+    --fonteTitulo:roc-grotesk, sans-serif;
+    --fonteTexto:'Archivo', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    max-width: ;
+    min-width: ;
 }
 
 header{
@@ -62,4 +77,37 @@ nav ul li a:hover::after{
     width:60%;
     border-bottom:3px solid #307FE2;
     border-radius: 50px;
+}
+
+main {
+    background-color: var(--corSecundaria);
+    display:flex;
+    justify-content: space-around;
+    column-gap: 86px;
+    padding: var(--preenchimentoPadrao);
+    align-items: center;
+}
+
+main h2 {
+    font-family: var(--fonteTitulo);
+    font-size: 85.82px;
+    color: var(--corQuartenaria);
+}
+
+main h2 span {
+    color: var(--corPrimaria);
+}
+
+main p {
+    font-family: var(--fonteTexto);
+    font-size: 24px;
+    color: var(--corQuartenaria);
+}
+
+main p span {
+    color: var(--corTerciaria);    
+}
+
+main a {
+    font-family: var(--fonteTitulo);
 }
