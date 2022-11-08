@@ -19,12 +19,13 @@ font-family: roc-grotesk, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-body {
+/* body {
     max-width: ;
     min-width: ;
-}
+} */
 
 header{
     font-family: 'Archivo', sans-serif;
@@ -32,7 +33,7 @@ header{
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    padding: 16px 104px 15.5px 104px;
+    padding: 32px 216px;
 }
 
 h1{
@@ -81,17 +82,20 @@ nav ul li a:hover::after{
 
 main {
     background-color: var(--corSecundaria);
-    display:flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-content: space-around; */
     column-gap: 86px;
     padding: var(--preenchimentoPadrao);
-    align-items: center;
+    /* align-items: center; */
 }
 
 main h2 {
     font-family: var(--fonteTitulo);
     font-size: 85.82px;
     color: var(--corQuartenaria);
+    margin-top: 8.125rem;
+    margin-bottom: 3.688rem;
 }
 
 main h2 span {
@@ -102,6 +106,7 @@ main p {
     font-family: var(--fonteTexto);
     font-size: 24px;
     color: var(--corQuartenaria);
+    margin-bottom: 3.25rem;
 }
 
 main p span {
@@ -110,4 +115,77 @@ main p span {
 
 main a {
     font-family: var(--fonteTitulo);
+    font-size: 29.11px;
+    font-weight: bold;
+    color: var(--corQuartenaria);
+    background-color: var(--corTerciaria);
+    padding: 27.53px 30px 24.48px 38px;
+    border-radius: 10px;
+}
+
+main div#modelo img {
+    margin-top: 10rem;
+    margin-bottom: 6.75rem;
+}
+
+section#episodios {
+    font-family: var(--fonteTitulo);
+    background-color: var(--corQuartenaria);
+}
+
+section#episodios h3 {
+    font-size: 39.5px;
+}
+
+section#episodios h3::before {
+    content: url(../imgs/Info.png);
+    width: 24.69px;
+    height: 24.69px;
+}
+
+section#episodios p {
+    margin-top: 64px;
+    margin-bottom: 35px;
+}
+
+section#episodios a {
+    font-weight: bold;
+    background-color: var(--corTerciaria);
+    color: var(--corQuartenaria);
+    padding: 12.14px 49.33px 9.86px 50px;
+    border-radius: 6.19px;
+}
+
+section#formulario {
+    background-color: var(--corTerciaria);
+    font-family: var(--fonteTitulo);
+    color: var(--corQuartenaria);
+}
+
+section#formulario h4 {
+    font-size: 75.24px;
+}
+
+section#formulario p {
+    font-size: 24px;
+}
+
+section#formulario form input.borda10 {
+    border-radius: 10px;
+}
+
+section#formulario form input[type="submit"] {
+    background-color: var(--corPrimaria);
+    border-radius: 5.87px;
+}
+
+footer {
+    background-color: var(--corSecundaria);
+    font-family: var(--fonteTitulo);
+    font-size: 24px;
+    color: var(--corQuartenaria);
+}
+
+footer a {
+    color: var(--corQuartenaria);
 }
