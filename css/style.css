@@ -27,13 +27,22 @@ font-family: roc-grotesk, sans-serif;
     min-width: ;
 } */
 
+/* Cabeçalho */
+
 header{
     font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    background-color: var(--corQuartenaria);
+    padding: 16px 352px 16px;
+    position: sticky;
+    top: 0;
+}
+
+header > div {
     display: flex;
     justify-content: space-between;
+    max-width: 1216px;
     align-items: center;
-    font-size: 18px;
-    padding: 32px 216px;
 }
 
 h1{
@@ -80,22 +89,31 @@ nav ul li a:hover::after{
     border-radius: 50px;
 }
 
+/* Area Principal */
+
 main {
     background-color: var(--corSecundaria);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+     display: flex;
+    flex-direction: row;
     /* justify-content: space-around; */
-    column-gap: 86px;
     padding: var(--preenchimentoPadrao);
-    /* align-items: center; */
+    justify-content: center;
 }
+
+
+main > div {
+    align-items: center; 
+    max-width: 1008px;
+    display: flex;
+    column-gap: 138px;
+    margin: 95px 0;
+} 
 
 main h2 {
     font-family: var(--fonteTitulo);
     font-size: 85.82px;
     color: var(--corQuartenaria);
-    margin-top: 8.125rem;
-    margin-bottom: 3.688rem;
+    margin-bottom: 38px;
 }
 
 main h2 span {
@@ -106,7 +124,7 @@ main p {
     font-family: var(--fonteTexto);
     font-size: 24px;
     color: var(--corQuartenaria);
-    margin-bottom: 3.25rem;
+    margin-bottom: 79.52px;
 }
 
 main p span {
@@ -123,18 +141,30 @@ main a {
     border-radius: 10px;
 }
 
-main div#modelo img {
+/* main div div#modelo img {
     margin-top: 10rem;
     margin-bottom: 6.75rem;
-}
+} */
+
+/* Secao Episodios */
 
 section#episodios {
     font-family: var(--fonteTitulo);
     background-color: var(--corQuartenaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#episodios div {
+    margin: 120px 0;
+    max-width: 1008px;
 }
 
 section#episodios h3 {
+    text-align: center;
     font-size: 39.5px;
+    margin-bottom: 68px;
 }
 
 section#episodios h3::before {
@@ -143,18 +173,38 @@ section#episodios h3::before {
     height: 24.69px;
 }
 
+section#episodios div ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+    justify-content: center;
+}
+
 section#episodios p {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #9FA3A6;
     margin-top: 64px;
     margin-bottom: 35px;
 }
 
 section#episodios a {
-    font-weight: bold;
+    font-family: var(--fonteTexto);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    /* font-weight: bold; */
     background-color: var(--corTerciaria);
     color: var(--corQuartenaria);
-    padding: 12.14px 49.33px 9.86px 50px;
-    border-radius: 6.19px;
+    padding: 14px 50px;
+    margin: 0 432px;
+    border-radius: 6px;
 }
+
+/* Secao Formulario */
 
 section#formulario {
     background-color: var(--corTerciaria);
@@ -178,6 +228,8 @@ section#formulario form input[type="submit"] {
     background-color: var(--corPrimaria);
     border-radius: 5.87px;
 }
+
+/* Rodape */
 
 footer {
     background-color: var(--corSecundaria);
