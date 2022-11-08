@@ -12,10 +12,6 @@ Projeto realizado em conjunto para o ButecoTech
 
 <br>
 
-<p align="center">
-  <img alt="demonstracao do projeto" src=".github/project.png" width="100%">
-</p>
-
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
