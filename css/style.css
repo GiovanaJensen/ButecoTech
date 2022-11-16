@@ -22,6 +22,11 @@ font-family: roc-grotesk, sans-serif;
     text-decoration: none;
 }
 
+/* img{
+    max-width: 100%;
+    height: auto;
+} */
+
 /* body {
     max-width: ;
     min-width: ;
@@ -31,7 +36,7 @@ font-family: roc-grotesk, sans-serif;
 
 header{
     font-family: 'Archivo', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     background-color: var(--corQuartenaria);
     padding: 16px 352px 16px;
     position: sticky;
@@ -93,7 +98,6 @@ nav ul li a:hover::after{
 
 main {
     background-color: var(--corSecundaria);
-     display: flex;
     flex-direction: row;
     /* justify-content: space-around; */
     padding: var(--preenchimentoPadrao);
@@ -106,12 +110,12 @@ main > div {
     max-width: 1008px;
     display: flex;
     column-gap: 138px;
-    margin: 95px 0;
+    padding: 95px 0;
 } 
 
 main h2 {
     font-family: var(--fonteTitulo);
-    font-size: 85.82px;
+    font-size: 4.5rem;
     color: var(--corQuartenaria);
     margin-bottom: 38px;
 }
@@ -122,7 +126,7 @@ main h2 span {
 
 main p {
     font-family: var(--fonteTexto);
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--corQuartenaria);
     margin-bottom: 79.52px;
 }
@@ -133,7 +137,7 @@ main p span {
 
 main a {
     font-family: var(--fonteTitulo);
-    font-size: 29.11px;
+    font-size: 1.375rem;
     font-weight: bold;
     color: var(--corQuartenaria);
     background-color: var(--corTerciaria);
@@ -163,7 +167,7 @@ section#episodios div {
 
 section#episodios h3 {
     text-align: center;
-    font-size: 39.5px;
+    font-size: 2.5rem;
     margin-bottom: 68px;
 }
 
@@ -183,7 +187,7 @@ section#episodios div ul {
 }
 
 section#episodios p {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 36px;
     text-align: center;
     color: #9FA3A6;
@@ -194,8 +198,11 @@ section#episodios p {
 section#episodios a {
     font-family: var(--fonteTexto);
     font-weight: 700;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    display: block;
+    /* justify-content: center; */
+    width: 200px;
+    text-align:center;
     /* font-weight: bold; */
     background-color: var(--corTerciaria);
     color: var(--corQuartenaria);
@@ -206,35 +213,102 @@ section#episodios a {
 
 /* Secao Formulario */
 
-section#formulario {
+/* section#formulario {
     background-color: var(--corTerciaria);
     font-family: var(--fonteTitulo);
     color: var(--corQuartenaria);
 }
 
+section#formulario > div{
+    max-width: 1008px;
+    padding-top: 154px;
+} */
+
+section#formulario {
+    background-color: var(--corTerciaria);
+    color: #fff;
+    /* justify-content: space-around; */
+    padding: 153px 216px 0 253px;
+    justify-content: center;
+}
+
+
+section#formulario > div {
+    max-width: 1008px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-between; */
+    justify-content: space-around;
+    column-gap: 293px;
+} 
+
 section#formulario h4 {
-    font-size: 75.24px;
+    font-family: var(--fonteTitulo);
+    font-size: 4.688rem;
+    margin-bottom: 34px;
 }
 
 section#formulario p {
-    font-size: 24px;
+    font-family: var(--fonteTexto);
+    font-size: 1.5rem;
+    margin-bottom: 62px;
+}
+
+div#personas{
+    display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+}
+
+section#formulario form input::placeholder{
+    color: #000; 
+    font-weight: bold;
+    font-size : 1.125rem;
 }
 
 section#formulario form input.borda10 {
+    border: 2px solid #000;
     border-radius: 10px;
+    width: 394px;
+    padding: 18px 0 17px 32px;
+    margin-bottom: 27px;
+}
+
+form div{
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 12px;
+}
+
+section#formulario form input.borda10[placeholder="Digite sua mensagem!"]{
+    padding: 18px 0 187px 30px;
 }
 
 section#formulario form input[type="submit"] {
     background-color: var(--corPrimaria);
-    border-radius: 5.87px;
+    
 }
+
+section#formulario form button{
+    background-color: #fff;
+}
+
+section#formulario form button, section#formulario form input[type="submit"]{
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: bold;
+    width: 163px;
+    height: 53px;
+    border-radius: 6px;
+}
+
 
 /* Rodape */
 
 footer {
     background-color: var(--corSecundaria);
     font-family: var(--fonteTitulo);
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--corQuartenaria);
 }
 
