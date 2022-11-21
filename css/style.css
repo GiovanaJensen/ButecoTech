@@ -7,6 +7,7 @@ font-family: roc-grotesk, sans-serif;
 */
 
 :root {
+    font-size: 100%;
     --corPrimaria:#FFD140;
     --corSecundaria:#101920;
     --corTerciaria:#3080E3;
@@ -83,6 +84,7 @@ nav ul li a:hover{
 
 nav ul li:last-child{
     margin-left: 84px;
+    cursor: pointer;
 }
 
 nav ul li a:hover::after{
@@ -98,12 +100,13 @@ nav ul li a:hover::after{
 /* Area Principal */
 
 main {
-    background-color: var(--corSecundaria);   
+    background-image:linear-gradient(to bottom right,rgba(3,30,63,0.9),rgba(3,30,63,0.2)), url(../imgs/background-image.webp);
+    background-size: cover;
+    background-position: center;
+    /* background-color: var(--corSecundaria); */
     /* justify-content: space-around; */
     padding: var(--preenchimentoPadrao);
-    
 }
-
 
 main > div {
     align-items: center; 
@@ -131,7 +134,7 @@ main p {
     font-family: var(--fonteTexto);
     font-size: 1.5rem;
     color: var(--corQuartenaria);
-    margin-bottom: 79.52px;
+    margin-bottom: 85px;
 }
 
 main p span {
@@ -145,7 +148,71 @@ main a {
     color: var(--corQuartenaria);
     background-color: var(--corTerciaria);
     padding: 27px 30px 24px 38px;
-    border-radius: 10px;
+    border-radius: 7px;
+}
+
+main div#logo-main {
+    background-color: var(--corPrimaria);
+}
+
+/* Secao Cloud */
+
+section#cloud {
+    
+    background-color: #ECEFF4;
+}
+
+section#cloud > div {
+    align-items: center; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section#cloud > div#primeira-div {
+    /* max-width: 1008px; */
+    /* display: flex; */
+    column-gap: 39px;
+    padding: 95px 216px;
+}
+
+section#cloud h2 {
+    font-family: var(--fonteTitulo);
+    font-size: 3rem;
+    color: var(--corSecundaria);
+    margin-bottom: 24px;
+}
+
+section#cloud h2 span {
+    color: var(--corTerciaria);
+}
+
+section#cloud p {
+    font-family: var(--fonteTexto);
+    font-size: 1.5rem;
+    color: var(--corSecundaria);
+    margin-bottom: 60px;
+}
+
+section#cloud a {
+    font-family: var(--fonteTitulo);
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--corSecundaria);
+    background-color: var(--corPrimaria);
+    padding: 18px 48px;
+    border-radius: 6px;
+    border: 2px solid var(--corSecundaria);
+}
+
+
+.boteco-tech {
+    width: 100%;
+    margin: 0 auto;
+    column-gap: 30px;
+    background-color: var(--corPrimaria);
+    padding: 27px 352px;
+    border: 2px solid var(--corSecundaria);
 }
 
 /* main div div#modelo img {
@@ -175,7 +242,8 @@ section#episodios h3 {
 }
 
 section#episodios h3::before {
-    content: url(../imgs/Info.png);
+    content: url(../imgs/Info.svg);
+    margin-right: 10px;
     width: 24.69px;
     height: 24.69px;
 }
@@ -346,13 +414,13 @@ section#footer-infos div a img{
 section#footer-mapa > div{
     display: grid;
     grid-template-columns: 3fr 2fr;
-    column-gap: 153px;
+    column-gap: 209px;
     align-items:center;
 }
 
 section#footer-mapa div#mapa-site{
     display: flex;
-    column-gap: 103px;
+    column-gap: 128px;
 }
 
 section#footer-mapa div p, section#footer-sac p{
@@ -393,6 +461,10 @@ section#footer-sac{
 
 section#footer-sac h4{
     margin-bottom: 16px;
+}
+
+section#footer-sac address, section#footer-mapa address{
+    font-style: normal;
 }
 
 section#footer-copyright{
