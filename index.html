@@ -14,11 +14,11 @@
         <h1>ButecoTech</h1>
         <nav>
             <ul>
-                <li><a href="#" class="ativo">sobre nós</a></li>
-                <li><a href="#">episódios</a></li>
-                <li><a href="#">contato</a></li>
-                <li><a href="#">parcerias</a></li>
-                <li><img src="imgs/Burger.png" alt="menu burger"></li>
+                <li><a href="index.html" class="ativo" tabindex="1">sobre nós</a></li>
+                <li><a href="episodios.html" tabindex="2">episódios</a></li>
+                <li><a href="#" tabindex="3">contato</a></li>
+                <li><a href="#" tabindex="4">parcerias</a></li>
+                <li><img src="imgs/Burger.svg" alt="menu burger" tabindex="5"></li>
             </ul>
         </nav>
         </div>
@@ -33,21 +33,44 @@
             </div>
     
             <div class="div-main" id="modelo">
-                <img src="imgs/model.png" alt="imagem modelo">
-            <div>
+                <img src="imgs/model.webp" alt="imagem modelo">
+            </div>
         </div>
     </main>
+
+    <section id="cloud">
+        <div id="primeira-div">
+            <div class="div-cloud">
+                <h2><span>Cloud,</span> networking e uma boa breja</h2>
+                <p>Falamos sobre cloud, kubernetes, docker, ansible e devops de uma forma descontraída e leve.</p>
+                <a href="#">Conhecer</a>
+            </div>
+    
+            <div class="div-cloud" id="">
+                <img src="imgs/illuustra 1.webp" alt="imagem ilustrativa cloud">
+            </div>
+        </div>
+
+        <div class="boteco-tech">
+            <img src="imgs/logo-main.svg" alt=""> 
+            <img src="imgs/logo-main.svg" alt=""> 
+            <img src="imgs/logo-main.svg" alt=""> 
+            <img src="imgs/logo-main.svg" alt=""> 
+            <img src="imgs/logo-main.svg" alt=""> 
+            <img src="imgs/logo-main.svg" alt="">
+        </div>
+    </section>
 
     <section id="episodios">
         <div>
         <h3>Novos Episódios</h3>
         <ul>
-            <li><img src="imgs/Thumb1.png" alt=""></li>
-            <li><img src="imgs/Thumb2.png" alt=""></li>
-            <li><img src="imgs/Thumb3.png" alt=""></li>
-            <li><img src="imgs/Thumb4.png" alt=""></li>
-            <li><img src="imgs/Thumb5.png" alt=""></li>
-            <li><img src="imgs/Thumb6.png" alt=""></li>
+            <li><img src="imgs/Thumb1.webp" alt="Tumbnail de apresentação do episódio tecnologia cloud, com uma chamada para ação ao espectador (call-to-action)"></li>
+            <li><img src="imgs/Thumb2.webp" alt="Tumbnail de apresentação do episódio especial 1"></li>
+            <li><img src="imgs/Thumb3.webp" alt="Tumbnail de apresentação do episódio breja + tecnologia, com uma chamada para ação ao espectador (call-to-action)"></li>
+            <li><img src="imgs/Thumb4.webp" alt="Tumbnail de apresentação do episódio especial 2"></li>
+            <li><img src="imgs/Thumb5.webp" alt="Tumbnail de apresentação do episódio equipes remotas, com uma chamada para ação ao espectador (call-to-action)"></li>
+            <li><img src="imgs/Thumb6.webp" alt="Tumbnail de apresentação do episódio especial 3"></li>
         </ul>
         <p>Os episódios estão todos disponíveis no<br> Youtube, Spotify e Apple Music.</p>
         <a href="#">Acessar</a>
@@ -59,13 +82,13 @@
                 <h4>Entre em contato de maneira fácil</h4>
                 <p>&lt/Iremos realizar um episódio de inauguração explicando os principais temas e convidados do podcast!&gt</p>
                 <div id="personas">
-                    <img src="imgs/Persona 1.png" alt="Persona 1">
-                    <img src="imgs/Persona 2.png" alt="Persona 2">
+                    <img src="imgs/Persona 1.svg" alt="Avatar ilustrativo 1">
+                    <img src="imgs/Persona 2.svg" alt="Avatar ilustrativo 2">
                 </div>     
             </div>
             <form action="" method="post">
-                <input type="text" value="" placeholder="Nome completo:" class="borda10">
-                <input type="email" value="" placeholder="Melhor e-mail:" class="borda10">
+                <input type="text" name="nome" placeholder="Nome completo:" class="borda10">
+                <input type="email" name="email" placeholder="Melhor e-mail:" class="borda10">
                 <textarea name="mensagem" id="mensagem"  rows="10" placeholder="Digite sua mensagem" class="borda10" required></textarea>
                 <div>
                     <input type="submit" value="Enviar">
@@ -78,14 +101,14 @@
 
     <footer>
         <section id="footer-infos">
-            <img src="imgs/logo-footer.svg" alt="Logo do ButecoTech">
+            <img src="imgs/logo-footer.svg" alt="Logotipo do ButecoTech">
             <div>
                 <p>Siga-nos nas redes sociais</p>
-                <a href="#"><img src="imgs/facebook.png" alt="Logo do Facebook"></a>
-                <a href="#"><img src="imgs/youtube.png" alt="Logo do Youtube"></a>
-                <a href="#"><img src="imgs/linkedin.png" alt="Logo do Linkedin"></a>
-                <a href="#"><img src="imgs/twitter.png" alt="Logo do Twitter"></a>
-                <a href="#"><img src="imgs/instagram.png" alt="Logo do Instagram"></a>
+                <a href="#"><img src="imgs/facebook.svg" alt="Logotipo do Facebook"></a>
+                <a href="#"><img src="imgs/youtube.svg" alt="Logotipo do Youtube"></a>
+                <a href="#"><img src="imgs/linkedin.svg" alt="Logotipo do Linkedin"></a>
+                <a href="#"><img src="imgs/twitter.svg" alt="Logotipo do Twitter"></a>
+                <a href="#"><img src="imgs/instagram.svg" alt="Logotipo do Instagram"></a>
             </div>
         </section>
         <section id="footer-mapa">
@@ -104,26 +127,26 @@
                         <p>linkedin</p>
                         <p>youtube</p>
                     </div>
-                    <div>
+                    <address>
                         <p>brasil</p>
                         <p>são paulo | SP</p>
                         <p>república | 01044-903</p>
                         <p>Rua Sete de Abril, 252 | 12º Andar | Cj: 120/121 |</p>
-                    </div>   
+                    </address>   
                 </div>
                 <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6385615572153!2d-46.64342068558599!3d-23.54549886689053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5851fc860dc3%3A0x89bd461a1a005fa1!2sR.%20Sete%20de%20Abril%2C%20252%20-%20Rep%C3%BAblica%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001037-001!5e0!3m2!1spt-BR!2sbr!4v1668799395957!5m2!1spt-BR!2sbr" width="100%" height="50%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6385615572153!2d-46.64342068558599!3d-23.54549886689053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5851fc860dc3%3A0x89bd461a1a005fa1!2sR.%20Sete%20de%20Abril%2C%20252%20-%20Rep%C3%BAblica%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001037-001!5e0!3m2!1spt-BR!2sbr!4v1668799395957!5m2!1spt-BR!2sbr" width="75%" height="50%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div> 
         </section>
         <section id="footer-sac">
-            <div>
+            <address>
                 <h4>central de atendimento</h4>
                 <p>(11) 3237 4232</p>
                 <p>(11) 9 7443 5898 (whatsApp)</p>
                 <p>atendimento@sgpsolucoes.com.br</p>
                 <p>(das 08h30 às 17h30)</p>
-            </div>
+            </address>
             <div>
                 <h4>políticas</h4>
                 <p>Política de Cookies</p>
@@ -134,7 +157,7 @@
         <section id="footer-copyright">
             <p>2022  Copyright by Oktavio.Design  |  Todos os direitos reservados  |  v.2.5.10
             </p>
-            <a href="#"><img src="imgs/contato.svg" alt="ícone de contato"> contato</a>
+            <a href="#"><img src="imgs/contato.svg" alt="ícone de contato (balão de fala)"> contato</a>
         </section>
     </footer>
    
