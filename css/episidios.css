@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+:root {
+    font-size: 100%;
+    --corPrimaria:#FFD140;
+    --corSecundaria:#101920;
+    --corTerciaria: #011227;
+    --corQuartenaria:#FEF9F3;
+    --preenchimentoPadrao: 0 216px;
+    --fonteTitulo:roc-grotesk, sans-serif;
+    --fonteTexto:'Archivo', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Cabeçalho */
+
+header{
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.125rem;
+    background-color: var(--corQuartenaria);
+    padding: 16px 216px;
+    position: sticky;
+    top: 0;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1216px; */
+    align-items: center;
+}
+
+h1{
+    height: 50px;
+    width: 176px;
+    background: url("../imgs/logo.svg");
+    text-indent: -9999px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 10px;
+}
+
+nav ul li a{
+    color: #999;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    padding: 0 10px;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul li:last-child{
+    margin-left: 84px;
+    cursor: pointer;
+}
+
+nav ul li a:hover::after{
+    content: "";
+    position:absolute;
+    bottom:-8px;
+    left: 15px;
+    width:60%;
+    border-bottom:3px solid #307FE2;
+    border-radius: 50px;
+}
+
+/* Rodape */
+
+footer {
+    background-color: var(--corSecundaria);
+    color: #C6C5CE;
+    padding: 60px 216px 100px 216px;
+    text-transform: capitalize;
+}
+
+footer h4{
+    font-family: var(--fonteTitulo);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+section#footer-infos{
+    font-family: var(--fonteTexto);
+    font-size:1.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-bottom: 40px;
+    border-bottom: 3px solid #5F5C6B;
+    margin-bottom: 60px;
+}
+
+section#footer-infos div{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+section#footer-infos div p{
+    margin-right: 40px;
+}
+
+section#footer-infos div a{
+    margin-left: 37px;
+}
+
+section#footer-infos div a img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+section#footer-mapa > div{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 209px;
+    align-items:center;
+}
+
+section#footer-mapa div#mapa-site{
+    display: flex;
+    column-gap: 128px;
+}
+
+section#footer-mapa div p, section#footer-sac p{
+    font-family: var(--fonteTexto);
+    font-size: 1.25rem;
+    color: #C6C5CE;
+    margin-bottom: 5px;
+}
+
+section#footer-mapa h4 {
+    margin-bottom: 36px;
+}
+
+section#footer-mapa div p, section#footer-sac p{
+    transition: all .45s ease;
+}
+
+section#footer-mapa div p:hover, section#footer-sac p:hover{
+    transform: translateX(5px);
+    color: #fff;
+}
+
+section#footer-mapa iframe{
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+section#footer-sac{
+    margin-top: 42px;
+    padding-bottom: 67px;
+    border-bottom: 3px solid #5F5C6B; 
+}
+
+section#footer-sac{
+    display: flex;
+    column-gap: 53px;
+}
+
+section#footer-sac h4{
+    margin-bottom: 16px;
+}
+
+section#footer-sac address, section#footer-mapa address{
+    font-style: normal;
+}
+
+section#footer-copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 54px;
+}
+
+section#footer-copyright p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.25rem;
+    color: #C6C5CE;
+}
+
+section#footer-copyright a{
+    font-family: var(--fonteTexto);
+    font-size: 1.25rem;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    width: 155px;
+    background-color: var(--corPrimaria);
+    color: #000;
+    border-radius: 160px;
+    padding: 14px 26px;
+}
+
+section#footer-copyright img {
+    margin-right: 8px;
+}
