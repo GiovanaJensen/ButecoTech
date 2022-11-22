@@ -13,13 +13,54 @@
     }
 
     *{
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
         box-sizing: border-box;
         text-decoration: none;
     }
 
     /* Cabeçalho */
+
+
+.pai {
+    max-width: 99.75rem;
+}
+
+#id-conversas {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24rem;
+    /* padding: 0 12rem; */
+}
+
+
+.imagens-centrais {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+
+#imagens-conjunto {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagens-centrais > div#imagens-conjunto > img{
+    width: 25rem;
+}
+
+
+.imagem-vertical > img {
+    width: 25rem;
+}
+
+
+
+
 
     header{
         font-family: 'Archivo', sans-serif;
@@ -85,30 +126,36 @@
     /* Area Principal */
 
     main#main-episodios {
-        background-color: var(--corPrimaria);
-        border-bottom: 2px solid black;
-        padding: 0 526px;
+        background: linear-gradient(to bottom, var(--corPrimaria) 50%, #fff 50%);
+        /* border-bottom: 2px solid black; */
+        /* padding: 0 526px; */
     }
 
     main#main-episodios div > h2 {
-        text-align: center; 
+        text-align: center;
         /* display: flex; */
         /* flex-direction: row; */
         justify-content: center;
         /* max-width: 1008px; */
-        padding-top: 172px;
-    } 
+        /* padding-top: 172px; */
+        /* padding: ; */
+        width: 100%;
+        /*revisar valores a partir da alteracao da Barbara*/ padding: 233px 352px;
+    }
+    /* VOLTA PRA CÁ */
 
     main#main-episodios div h2 {
+
         font-family: var(--fonteTitulo);
         font-size: 4.5rem;
         color: black;
-        margin-bottom: 463px;
+        /* margin-bottom: 463px; */
+        text-align: center;
     }
 
     /* Imagens entre secoes */
 
-    section#imagens-3d {
+    /* section#imagens-3d {
         display: flex;
         column-gap: 88px;
         position: absolute;
@@ -116,43 +163,32 @@
         left: 352px;
         right: 352px;
         margin: 0 auto;
-    }
-
-    img[src="imgs/maincomp.webp"] {
-        margin-top: 11px;
-    }
-
-    img[src="imgs/Group 58.webp"] {
-        margin-bottom: 20px;
-    }
+    } */
 
     /* Secao conversas rever > div */
 
     section#conversas {
-        background-color: #fff;
-    }
-
-    section#conversas > div {
-        align-items: center; 
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        column-gap: 165px;
-        padding: 409px 352px 180px;
+        flex-direction: row;
+        align-items: center;
+        gap: 6rem;
+        width: 100%;
+        padding: 5rem 12rem;
     }
 
     section#conversas h3 {
         font-family: var(--fonteTitulo);
         font-size: 3rem;
         color: var(--corSecundaria);
-        margin-bottom: 32px;
+        /* margin-bottom: 32px; */
     }
 
     section#conversas p {
         font-family: var(--fonteTexto);
         font-size: 1.5rem;
         color: var(--corSecundaria);
-        margin-bottom: 60px;
+        /* margin-bottom: 60px; */
     }
 
     section#conversas a {
@@ -164,6 +200,8 @@
         padding: 18px 48px;
         border-radius: 6px;
         border: 2px solid var(--corSecundaria);
+        margin: 0;
+        width: 14rem;
     }
 
     /* Secao plataformas */
@@ -173,7 +211,7 @@
     }
 
     section#plataformas > div {
-        align-items: center; 
+        align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -212,7 +250,11 @@
 
     section#missao {
         background-color: var(--corQuartenaria);
+
+        /* AQUI */
     }
+
+    
 
     section#missao > div {
         align-items: center; 
@@ -220,24 +262,30 @@
         flex-direction: row;
         justify-content: center;
         column-gap: 183px;
-        padding: 251px 0 256px 352px;
+        padding: 251px 352px 238px 352px;
     }
 
     section#missao h5 {
         font-family: var(--fonteTitulo);
         font-size: 3rem;
         color: var(--corSecundaria);
-        margin-bottom: 42px;
     }
 
     section#missao p {
         font-family: var(--fonteTexto);
         font-size: 1.5rem;
         color: var(--corSecundaria);
-        margin-bottom: 48px;
+        
     }
 
-    section#missao a {
+    #alinhamento-missao > img { 
+        margin: 0;
+    }
+
+    
+
+    #alinhamento-missao > a {
+        margin: 0;
         font-family: var(--fonteTitulo);
         font-size: 1.25rem;
         font-weight: bold;
@@ -246,11 +294,19 @@
         padding: 18px 48px;
         border-radius: 6px;
         border: 2px solid var(--corSecundaria);
-        margin-right: 24px;
+    }
+    
+    #definicao-missao {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
     section#missao div#alinhamento-missao {
         display: flex;
+        width: 100%;
+        gap: 1.5625rem;
+        margin: 0;
     }
 
     /* Rodape */
@@ -340,7 +396,7 @@
     section#footer-sac{
         margin-top: 42px;
         padding-bottom: 67px;
-        border-bottom: 3px solid #5F5C6B; 
+        border-bottom: 3px solid #5F5C6B;
     }
 
     section#footer-sac{
