@@ -24,11 +24,10 @@ font-family: roc-grotesk, sans-serif;
     text-decoration: none;
 }
 
-/* img{
+img{
     max-width: 100%;
     height: auto;
-    object-fit: contain;
-} */
+}
 
 /* body {
     max-width: ;
@@ -165,6 +164,7 @@ section#formulario > div{
     grid-template-columns: repeat(2,1fr);
     column-gap: 104px;
     padding: 257px 216px 300px 216px;
+    align-items: center;
 }
 
 section#formulario h4 {
