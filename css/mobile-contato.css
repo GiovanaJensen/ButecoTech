@@ -1,0 +1,37 @@
+@media screen and (max-width: 1200px){
+    main{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover; 
+    }
+    .boteco-tech img:first-child, .boteco-tech img:last-child{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+    section#formulario > div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .boteco-tech img:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px){
+    .boteco-tech img:nth-child(3){
+        display: none;
+    }
+}
+
+@media screen and (min-width: 150px) and (max-width: 400px){
+    
+    form input, form textarea{
+        width: 40%; 
+    }
+} 
