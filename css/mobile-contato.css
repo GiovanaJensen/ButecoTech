@@ -19,6 +19,10 @@
 }
 
 @media screen and (max-width: 800px){
+    main h2{
+        font-size: 2.25rem;
+    }
+
     .boteco-tech img:nth-child(2){
         display: none;
     }
