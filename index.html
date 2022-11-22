@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/koh4zqv.css">
-    <link rel="stylesheet" href="css/episodios.css">
-    <title>Episódios</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>ButecoTech</title>
 </head>
 <body>
     <header>
@@ -24,66 +24,81 @@
         </div>
     </header>
 
-    <main id="main-episodios">
+    <main>
         <div>
-            <h2>Episódios disponíveis em nosso canal do Youtube! <img src="imgs/pin.svg" alt="icone"></h2>   
+            <div class="div-main">
+                <h2>Você já conhece nosso <span>podcast?</span></h2>
+                <p><span>&lt</span>Iremos realizar um episódio de inauguração explicando os principais temas e convidados do podcast!<span>/&gt</span></p>
+                <a href="#">Ao vivo no Youtube!</a>
+            </div>
+    
+            <div class="div-main" id="modelo">
+                <img src="imgs/model.webp" alt="imagem modelo">
+            </div>
         </div>
     </main>
 
-    <section id="imagens-3d">
-        <div>
-            <img src="imgs/maincomp.webp" alt="">
-        </div>
-        <div id="imagens-conjunto">
-            <img src="imgs/Group 58.webp" alt="">
-            <img src="imgs/Group 59.webp" alt="">
-        </div>
-    </section>
-
-    <section id="conversas">
-        <div>
-            <div id="id-conversas">
-                <h3>Tenha acesso a conversas com grandes players do mercado.</h3>
-                <p>Profissionais experientes que já trabalham com a plataforma Zabbix e palestram em grandes eventos da área de tecnologia.</p>
-                <a href="#">Saber mais</a>
+    <section id="cloud">
+        <div id="primeira-div">
+            <div class="div-cloud">
+                <h2><span>Cloud,</span> networking e uma boa breja</h2>
+                <p>Falamos sobre cloud, kubernetes, docker, ansible e devops de uma forma descontraída e leve.</p>
+                <a href="#">Conhecer</a>
             </div>
-        
-            <div id="tablet">
-                <img src="imgs/iPad.webp" alt="imagem ilustrativa de um tablet transmitindo um episódio do podcast">
-            </div>
-        </div>
-    </section>
-
-    <section id="plataformas">
-        <div>
-            <div>
-                <img src="imgs/Macbook Air (2022).webp" alt="imagem ilustrativa de um notebook navegando pela pagina do podcast no Spotify">
-            </div>
-
-            <div>
-                <h4>Estamos sempre mantendo as plataformas com novos episódios.</h4>
-                <div id="links-plataformas"><a href="#">Acesse agora</a><img id="spotify" src="imgs/spot.svg" alt="logotipo Spotify"><img src="imgs/youtube (1).svg" alt="logotipo Youtube"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="missao">
-        <div id="agrupamento-missao">
-            <div id="definicao-missao">
-                <h5>Nossa missão é tornar a disseminação de conhecimento mais acessível, de uma forma fácil e descontraída.</h5>
-                <p>Se identificou com a proposta e quer fazer parte, entre em contato para nos conhecermos.</p>
-                <div id="alinhamento-missao"><a href="#">Saber mais</a><img src="imgs/Group 107.svg"></div>
-            </div>
-
-            <div>
-                <img src="imgs/card.webp" alt="">
-                <img src="imgs/Group 60.webp" alt="">
-                <img src="imgs/Group 61.webp" alt="">
-            </div>
-        </div>
-
-    </section>
     
+            <div class="div-cloud" id="">
+                <img src="imgs/illuustra 1.webp" alt="imagem ilustrativa cloud">
+            </div>
+        </div>
+
+        <div class="boteco-tech">
+            <img src="imgs/logo-main.svg" alt=""> 
+            <img src="imgs/logo-main.svg" alt=""> 
+            <img src="imgs/logo-main.svg" alt=""> 
+            <img src="imgs/logo-main.svg" alt=""> 
+            <img src="imgs/logo-main.svg" alt=""> 
+            <img src="imgs/logo-main.svg" alt="">
+        </div>
+    </section>
+
+    <section id="episodios">
+        <div>
+        <h3>Novos Episódios</h3>
+        <ul>
+            <li><img src="imgs/Thumb1.webp" alt="Tumbnail de apresentação do episódio tecnologia cloud, com uma chamada para ação ao espectador (call-to-action)"></li>
+            <li><img src="imgs/Thumb2.webp" alt="Tumbnail de apresentação do episódio especial 1"></li>
+            <li><img src="imgs/Thumb3.webp" alt="Tumbnail de apresentação do episódio breja + tecnologia, com uma chamada para ação ao espectador (call-to-action)"></li>
+            <li><img src="imgs/Thumb4.webp" alt="Tumbnail de apresentação do episódio especial 2"></li>
+            <li><img src="imgs/Thumb5.webp" alt="Tumbnail de apresentação do episódio equipes remotas, com uma chamada para ação ao espectador (call-to-action)"></li>
+            <li><img src="imgs/Thumb6.webp" alt="Tumbnail de apresentação do episódio especial 3"></li>
+        </ul>
+        <p>Os episódios estão todos disponíveis no<br> Youtube, Spotify e Apple Music.</p>
+        <a href="#">Acessar</a>
+        </div>
+    </section>
+        
+    <section id="formulario">
+            <div>
+                <h4>Entre em contato de maneira fácil</h4>
+                <p>&lt/Iremos realizar um episódio de inauguração explicando os principais temas e convidados do podcast!&gt</p>
+                <div id="personas">
+                    <img src="imgs/Persona 1.svg" alt="Avatar ilustrativo 1">
+                    <img src="imgs/Persona 2.svg" alt="Avatar ilustrativo 2">
+                </div>     
+            </div>
+            <form action="" method="post">
+                <input type="text" name="nome" placeholder="Nome completo:" class="borda10">
+                <input type="email" name="email" placeholder="Melhor e-mail:" class="borda10">
+                <textarea name="mensagem" id="mensagem"  rows="10" placeholder="Digite sua mensagem" class="borda10" required></textarea>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <button>Limpar</button>
+                </div>
+                
+            </form>
+            
+    </section>
+
     <footer>
         <section id="footer-infos">
             <img src="imgs/logo-footer.svg" alt="Logotipo do ButecoTech">
@@ -145,5 +160,6 @@
             <a href="#"><img src="imgs/contato.svg" alt="ícone de contato (balão de fala)"> contato</a>
         </section>
     </footer>
+   
 </body>
 </html>
