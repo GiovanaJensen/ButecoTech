@@ -24,6 +24,10 @@ font-family: roc-grotesk, sans-serif;
     text-decoration: none;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 img{
     max-width: 100%;
     height: auto;
@@ -35,40 +39,49 @@ img{
 } */
 
 /* Cabeçalho */
-
+  
 header{
-    font-family: 'Archivo', sans-serif;
-    font-size: 1.125rem;
+    font-family: var(--fonteTexto);
     background-color: var(--corQuartenaria);
-    padding: 16px 216px;
     position: sticky;
     top: 0;
-    width: 100%;
 }
-
-header > div {
-    display: flex;
-    justify-content: space-between;
-    /* max-width: 1216px; */
-    align-items: center;
+  
+nav a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.3s;
 }
-
-h1{
+  
+.logo{
     height: 50px;
     width: 176px;
     background: url("../imgs/logo.svg");
     text-indent: -9999px;
 }
-
-nav ul{
-    list-style-type: none;
+  
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+  
+.nav-list{
+    list-style: none;
     display: flex;
 }
-
+  
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+  
 nav ul li{
     margin-right: 10px;
 }
-
+  
 nav ul li a{
     color: #999;
     text-decoration: none;
@@ -76,25 +89,48 @@ nav ul li a{
     position: relative;
     padding: 0 10px;
 }
-
+  
 nav ul li a:hover{
     font-weight: bold;
     color: #000;
 }
-
-nav ul li:last-child{
-    margin-left: 84px;
-    cursor: pointer;
-}
-
+  
 nav ul li a:hover::after{
     content: "";
     position:absolute;
     bottom:-8px;
     left: 15px;
-    width:60%;
+    width:65%;
     border-bottom:3px solid #307FE2;
     border-radius: 50px;
+}
+  
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+  
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #FFD140;
+    margin: 8px;
+}
+
+.nav-list.active{
+    transform: translateX(0);
+}
+  
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /*MAIN*/
@@ -104,10 +140,10 @@ main {
 
 main > div#conteudo-principal {
     padding: var(--preenchimentoPadrao);
-    align-items: center; 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; 
 }
 
 
@@ -143,15 +179,20 @@ main a {
 
 .boteco-tech {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
     column-gap: 30px;
     background-color: var(--corPrimaria);
-    padding: 27px 352px;
+    padding: 27px 10px;
     border: 2px solid var(--corSecundaria);
-} 
+    justify-content: center;
+}
+
+.boteco-tech img{
+    min-width: 126px;
+}   
 
 /*formulario*/
 section#formulario{

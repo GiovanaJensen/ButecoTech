@@ -6,31 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/koh4zqv.css">
     <link rel="stylesheet" href="css/parceiros.css">
+    <link rel="stylesheet" href="css/mobile-parceiros.css">
     <title>Parceiros</title>
 </head>
 <body>
     <header>
-        <div>
-        <h1>ButecoTech</h1>
         <nav>
-            <ul>
-                <li><a href="index.html" class="ativo" tabindex="1">sobre nós</a></li>
-                <li><a href="episodios.html" tabindex="2">episódios</a></li>
-                <li><a href="parceiros.html" tabindex="3">parcerias</a></li>
-                <li><a href="contato.html" tabindex="4">contato</a></li>
-                <li><img src="imgs/Burger.svg" alt="menu burger" tabindex="5"></li>
-            </ul>
+          <h1 class="logo"><a  href="index.html">ButecoTech</a></h1>
+          <div class="mobile-menu">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">sobre nós</a></li>
+            <li><a href="episodios.html">episódios</a></li>
+            <li><a href="parceiros.html">parcerias</a></li>
+            <li><a href="contato.html">contato</a></li>
+          </ul>
         </nav>
-        </div>
     </header>
+
     <div class="pai">
-        <main id="main-parceiros">
-            <div class="titulo-parceiros">
-                <h2>Marcas que nos ajudam a fazer o show acontecer</h2> 
-            </div>
-            <div class="imagens-centrais">
-                <img src="imgs/apoio.webp" alt="Logotipos das marcas que apoiam o podcast" loading="lazy">
-            </div>
+            <section class="parceiros">
+                <div class="titulo-parceiros">
+                    <h2>Marcas que nos ajudam a fazer o show acontecer</h2>
+                </div>
+                <div class="imagens-centrais">
+                    <img src="imgs/apoio.webp" alt="imagens contendo os apoiadores do programa" loading="lazy">
+                    <img src="imgs/thumbnail_mobile-apoio.webp" alt="imagens contendo os apoiadores do programa" loading="lazy">
+                </div>
+            </section>
+           
             <section id="destaque-1">
                     <div id="id-destaque-1">
                         <h3>Um destaque importante para o Jorge Pretel</h3>
@@ -39,28 +46,24 @@
                     </div>
                 
                     <div id="tablet-2">
-                        <img src="imgs/IPAD2.webp" alt="imagem ilustrativa de um tablet transmitindo uma palestra de Jorge Pretel" loading="lazy">
+                        <img src="imgs/IPAD2.webp" alt="imagem ilustrativa de um tablet transmitindo um episódio do podcast" loading="lazy">
                     </div>
             </section>
-        </main>  
     </div>
 
-
-    <!-- TERMINA AQUI -->
-
-    <section id="destaque-2">
-        <div>
-            <div>
-                <img src="imgs/IPAD3.webp" alt="imagem ilustrativa de um tablet transmitindo uma palestra de Robert Silva" loading="lazy">
-            </div>
-
-            <div id="robert">
-                <h4>Um destaque importante para o Robert Silva</h4>
-                <p>Co-Fundador da JLCP, já palestrou em diversos eventos, especialmente no Zabbix.</p>
-                <a href="#">Acesse agora</a>
-            </div>
-        </div>
-    </section>
+    <div class="pai2">
+        <section id="destaque-2">
+                <div>
+                    <img src="imgs/IPAD3.webp" alt="imagem ilustrativa de um tablet transmitindo uma palestra de Robert Silva" loading="lazy">
+                </div>
+    
+                <div id="robert">
+                    <h4>Um destaque importante para o Robert Silva</h4>
+                    <p>Co-Fundador da JLCP, já palestrou em diversos eventos, especialmente no Zabbix.</p>
+                    <a href="#">Saber mais</a>
+                </div>
+        </section>
+    </div> 
 
     <footer>
         <section id="footer-infos">
@@ -123,5 +126,6 @@
             <a href="#"><img src="imgs/contato.svg" alt="ícone de contato (balão de fala)"> contato</a>
         </section>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -24,11 +24,14 @@ font-family: roc-grotesk, sans-serif;
     text-decoration: none;
 }
 
-/* img{
+body{
+    overflow-x: hidden;
+}
+
+img{
     max-width: 100%;
     height: auto;
-    object-fit: contain;
-} */
+}
 
 /* body {
     max-width: ;
@@ -36,39 +39,49 @@ font-family: roc-grotesk, sans-serif;
 } */
 
 /* Cabeçalho */
-
+  
 header{
-    font-family: 'Archivo', sans-serif;
-    font-size: 1.125rem;
+    font-family: var(--fonteTexto);
     background-color: var(--corQuartenaria);
-    padding: 16px 216px;
     position: sticky;
     top: 0;
 }
-
-header > div {
-    display: flex;
-    justify-content: space-between;
-    /* max-width: 1216px; */
-    align-items: center;
+  
+nav a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.3s;
 }
-
-h1{
+  
+.logo{
     height: 50px;
     width: 176px;
     background: url("../imgs/logo.svg");
     text-indent: -9999px;
 }
-
-nav ul{
-    list-style-type: none;
+  
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+  
+.nav-list{
+    list-style: none;
     display: flex;
 }
-
+  
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+  
 nav ul li{
     margin-right: 10px;
 }
-
+  
 nav ul li a{
     color: #999;
     text-decoration: none;
@@ -76,27 +89,49 @@ nav ul li a{
     position: relative;
     padding: 0 10px;
 }
-
+  
 nav ul li a:hover{
     font-weight: bold;
     color: #000;
 }
-
-nav ul li:last-child{
-    margin-left: 84px;
-    cursor: pointer;
-}
-
+  
 nav ul li a:hover::after{
     content: "";
     position:absolute;
     bottom:-8px;
     left: 15px;
-    width:60%;
+    width:65%;
     border-bottom:3px solid #307FE2;
     border-radius: 50px;
 }
+  
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+  
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #FFD140;
+    margin: 8px;
+}
 
+.nav-list.active{
+    transform: translateX(0);
+}
+  
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 /* Area Principal */
 
 main {
@@ -124,6 +159,7 @@ main h2 {
     font-size: 4.5rem;
     color: var(--corQuartenaria);
     margin-bottom: 38px;
+    max-width: 30.0rem;
 }
 
 main h2 span {
@@ -135,6 +171,8 @@ main p {
     font-size: 1.5rem;
     color: var(--corQuartenaria);
     margin-bottom: 85px;
+    max-width: 25rem;
+    line-height: 150%;
 }
 
 main p span {
@@ -151,9 +189,15 @@ main a {
     border-radius: 7px;
 }
 
+main img[src="imgs/model.webp"]{
+    min-width: 230px;
+}
+
 main div#logo-main {
     background-color: var(--corPrimaria);
 }
+
+
 
 /* Secao Cloud */
 
@@ -171,9 +215,8 @@ section#cloud > div {
 
 section#cloud > div#primeira-div {
     /* max-width: 1008px; */
-    /* display: flex; */
     column-gap: 39px;
-    padding: 95px 216px;
+    padding: 95px 0;
 }
 
 section#cloud h2 {
@@ -181,6 +224,8 @@ section#cloud h2 {
     font-size: 3rem;
     color: var(--corSecundaria);
     margin-bottom: 24px;
+    max-width: 21.12rem;
+    line-height: 120%;
 }
 
 section#cloud h2 span {
@@ -192,6 +237,8 @@ section#cloud p {
     font-size: 1.5rem;
     color: var(--corSecundaria);
     margin-bottom: 60px;
+    max-width: 24.8rem;
+    line-height: 150%;
 }
 
 section#cloud a {
@@ -211,8 +258,13 @@ section#cloud a {
     margin: 0 auto;
     column-gap: 30px;
     background-color: var(--corPrimaria);
-    padding: 27px 352px;
+    padding: 27px 10px;
     border: 2px solid var(--corSecundaria);
+    justify-content: center;
+}
+
+.boteco-tech img{
+    min-width: 126px;
 }
 
 /* main div div#modelo img {
@@ -257,9 +309,17 @@ section#episodios div ul {
     justify-content: center;
 }
 
+
+section#episodios div#lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 section#episodios p {
     font-size: 1.5rem;
-    line-height: 36px;
+    line-height: 2.25rem;
     text-align: center;
     color: #9FA3A6;
     margin-top: 64px;
@@ -284,27 +344,48 @@ section#episodios a {
 
 /* Secao Formulario */
 
-
-section#formulario {
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--corTerciaria);
-    color: #fff;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 293px;
-    padding: 153px 216px 0 216px;
 }
 
+section#formulario {
+    /* margin: 0 auto; */
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 100px;
+    padding-top: 153px;
+    width: 100%;
+}
+
+section#formulario div {
+    max-width: 484px;
+}
+
+section#formulario form {
+    max-width: 484px;
+}
 
 section#formulario h4 {
     font-family: var(--fonteTitulo);
     font-size: 4.688rem;
     margin-bottom: 34px;
+    max-width: 484px;
 }
 
 section#formulario p {
     font-family: var(--fonteTexto);
     font-size: 1.5rem;
     margin-bottom: 62px;
+    max-width: 25.87rem;
+    line-height: 150%;
 }
 
 div#personas{
