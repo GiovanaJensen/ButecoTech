@@ -176,8 +176,8 @@ main a {
     font-family: var(--fonteTitulo);
     font-size: 1.375rem;
     font-weight: bold;
-    color: var(--corQuartenaria);
-    background-color: var(--corTerciaria);
+    color: var(--corSecundaria);
+    background-color: var(--corQuartenaria);
     padding: 27px 30px 24px 38px;
     border-radius: 7px;
 }
