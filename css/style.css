@@ -47,13 +47,6 @@ header{
     top: 0;
 }
   
-nav a{
-    color: #fff;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.3s;
-}
-  
 .logo{
     height: 50px;
     width: 176px;
@@ -83,7 +76,7 @@ nav ul li{
 }
   
 nav ul li a{
-    color: #999;
+    color: #707070;
     text-decoration: none;
     text-transform: capitalize;
     position: relative;
