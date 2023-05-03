@@ -8,7 +8,7 @@
     --corTerciaria: #682F24;
     --corQuartenaria:#FEF9F3;
     --preenchimentoPadrao: 0 216px;
-    --fonteTitulo:roc-grotesk, sans-serif;
+    --fonteTitulo: roc-grotesk, sans-serif;
     --fonteTexto:'Archivo', sans-serif;
 }
 
@@ -339,21 +339,18 @@ div.table{
     padding: 100px 100px;
 }
 
-div.table h4 {
+div.table caption{
     font-family: var(--fonteTitulo);
     font-size: 3rem;
     color: var(--corSecundaria);
-    max-width: 400px;
     margin-bottom: 40px;
 }
 
 #calendario {
-    font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    font-family: var(--fonteTexto);
+    font-size: 1.25rem;
+}
   
   #calendario td, #calendario th {
     border: 1px solid #ddd;
