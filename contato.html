@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/mobile-contato.css">
     <link rel="icon" href="imgs/simbolo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ButecoTech | Contato</title>
 </head>
 <body>
@@ -48,11 +49,36 @@
         <div>
             <div id="form">
                 <h4>Preencha os campos</h4>
-                <form method="POST" action="">
-                    <input type="text" name="nome" id="nome" placeholder="nome completo:" required>
-                    <input type="email" name="email" id="email" placeholder="melhor e-mail:" required>
-                    <textarea name="mensagem" id="mensagem"  rows="10" placeholder="Digite sua mensagem" class="borda10" required></textarea>
-                    <input type="submit" value="Enviar formulário">
+                <form>
+                    <div class="form-control">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Giovana" class="borda10">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="tel">Telefone:</label>
+                        <input type="tel" name="tel" id="tel" placeholder="(62) 3634-8375" class="borda10">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="email@gmail.com" class="borda10">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" rows="10" placeholder="Digite sua mensagem" class="borda10"></textarea>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+                    <button>Enviar Formulário</button>
                 </form>
             </div>
             <div>
@@ -123,5 +149,6 @@
         </section>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/form.js" defer></script>
 </body>
 </html>

@@ -45,6 +45,7 @@ header{
     background-color: var(--corQuartenaria);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
   
 nav a{
@@ -220,6 +221,47 @@ form{
     row-gap: 34px;
 }
 
+section#formulario .form-control{
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+    position: relative;
+}
+
+section#formulario .form-control label{
+    font-family: var(--fonteTexto);
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+section#formulario .form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+  
+section#formulario .form-control.success i.fa-check-circle{
+    visibility: visible;
+    color: #2ecc71;
+}
+  
+section#formulario .form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: #e74c3c;
+}
+  
+section#formulario .form-control small{
+    font-family: var(--fonteTexto);
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+  
+section#formulario .form-control.error small{
+    visibility: visible;
+}
+
 form input, form textarea{
     width: 100%; 
 }
@@ -236,13 +278,13 @@ section#formulario form input::placeholder, section#formulario form textarea::pl
     text-transform: capitalize;
 }
 
-section#formulario form input[type="text"], section#formulario form input[type="email"], textarea{
+section#formulario form input, textarea{
     padding: 22px 0 22px 40px;
     border-radius: 12px;
     border: 3px solid #000;
 }
 
-section#formulario form input[type="submit"] {
+section#formulario form button {
     background-color: var(--corPrimaria);
     font-size: 1.563rem;
     color: #000;
