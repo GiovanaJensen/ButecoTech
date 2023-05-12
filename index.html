@@ -96,38 +96,38 @@
                     <img src="imgs/Persona 2.svg" alt="ilustração de uma jovem sorrindo. Ela está usando óculos de sol e blusa preta.">
                 </div>     
             </div>
-            <form action="" method="post">
-                <div class="form-control success">
+            <form>
+                <div class="form-control">
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Nome completo:" class="borda10">
+                    <input type="text" name="nome" id="nome" placeholder="Giovana" class="borda10">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Mensagem de erro</small>
                 </div>
-                <div class="form-control error">
+                <div class="form-control">
                     <label for="tel">Telefone:</label>
-                    <input type="tel" name="tel" placeholder="Seu telefone:" class="borda10">
+                    <input type="tel" name="tel" id="tel" placeholder="(62) 3634-8375" class="borda10">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Mensagem de erro</small>
                 </div>
                 <div class="form-control">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="Melhor e-mail:" class="borda10">
+                    <input type="email" name="email" id="email" placeholder="email@gmail.com" class="borda10">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Mensagem de erro</small>
                 </div>
                 <div class="form-control">
                     <label for="mensagem">Mensagem:</label>
-                    <textarea name="mensagem" id="mensagem"  rows="10" placeholder="Digite sua mensagem" class="borda10" required></textarea>
+                    <textarea name="mensagem" id="mensagem" rows="10" placeholder="Digite sua mensagem" class="borda10"></textarea>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Mensagem de erro</small>
                 </div>
                 <div id="botoes">
-                    <input type="submit" value="Enviar">
-                    <button>Limpar</button>
+                    <button id="enviar">Enviar</button>
+                    <button id="limpar">Limpar</button>
                 </div>
                 
             </form>
@@ -199,5 +199,6 @@
         </section>
     </footer>
     <script src="js/script.js"></script>
+    <script defer src='js/form.js'></script>
 </body>
 </html>

@@ -453,21 +453,22 @@ section#formulario form input.borda10[placeholder="Digite sua mensagem!"]{
     padding: 18px 0 187px 30px;
 }
 
-section#formulario form input[type="submit"] {
+section#formulario form button#enviar {
     background-color: var(--corPrimaria);
 }
 
-section#formulario form button{
+section#formulario form button#limpar{
     background-color: #fff;
 }
 
-section#formulario form button, section#formulario form input[type="submit"]{
+section#formulario form button#limpar, section#formulario form button#enviar{
     font-size: 1.25rem;
     color: #000;
     font-weight: bold;
     width: 163px;
     height: 53px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 
