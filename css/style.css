@@ -346,6 +346,22 @@ section#episodios a {
     background-color: var(--corTerciaria);
 }
 
+.container-form #error-recovery{
+    visibility: hidden;
+    color: #fff;
+}
+
+.container-form #error-recovery h4{
+    font-family: var(--fonteTitulo);
+    font-size: 1.875rem;
+    margin-top: 34px;
+    max-width: 484px;
+}
+
+.container-form #error-recovery ul{
+    margin-top: .625rem;
+}
+
 section#formulario {
     /* margin: 0 auto; */
     background-size: cover;

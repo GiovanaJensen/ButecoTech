@@ -11,6 +11,9 @@ form.addEventListener('submit', (e) => {
 })
 
 function checkInputs(){
+    const errorList = document.querySelector('#error-list');
+    errorList.innerHTML = '';
+
     const nomeValue = nome.value.trim();
     const telValue = tel.value.trim();
     const emailValue = email.value.trim();
@@ -45,14 +48,32 @@ function checkInputs(){
     }else{
         setSuccessFor(tel);
     }
+
+    if(errorList.childElementCount === 0){
+        const errorContainer = document.querySelector('#error-recovery');
+        errorContainer.style.visibility = 'hidden'; 
+    }
+
 }
 
-function setErrorFor(input, mensagem){
+function setErrorFor(input, mensagem) {
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
     small.innerText = mensagem;
     formControl.className = 'form-control error';
-}
+  
+    const errorDiv = document.querySelector('#error-recovery');
+    const errorList = document.querySelector('#error-list');
+  
+    const li = document.createElement('li');
+    li.innerText = mensagem;
+    errorList.appendChild(li);
+    
+    console.log('passou');
+
+    errorDiv.style.visibility = 'visible';
+  }
+  
 
 function setSuccessFor(input){
     const formControl = input.parentElement;
@@ -66,3 +87,9 @@ function isEmail(email){
 function isPhone(tel){
     return /^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$/.test(tel);
 }
+
+new Cleave('#tel', {
+    delimiters: ['(', ') ', '-'],
+    blocks: [0, 2, 5, 4],
+    numericOnly: true
+});
