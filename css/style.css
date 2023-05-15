@@ -359,7 +359,13 @@ section#episodios a {
 }
 
 .container-form #error-recovery ul{
+    font-family: var(--fonteTexto);
+    text-align: center;
     margin-top: .625rem;
+}
+
+.container-form #error-recovery ul li{
+    list-style: none;
 }
 
 section#formulario {

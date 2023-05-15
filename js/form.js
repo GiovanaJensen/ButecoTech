@@ -68,8 +68,6 @@ function setErrorFor(input, mensagem) {
     const li = document.createElement('li');
     li.innerText = mensagem;
     errorList.appendChild(li);
-    
-    console.log('passou');
 
     errorDiv.style.visibility = 'visible';
   }

@@ -198,14 +198,16 @@ main a {
 /*formulario*/
 section#formulario{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
-section#formulario > div{
+section#formulario > div#container-form{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 104px;
-    padding: 257px 216px 300px 216px;
+    padding: 50px 216px 300px 216px;
     align-items: center;
 }
 
@@ -219,6 +221,28 @@ form{
     display: flex;
     flex-direction: column;
     row-gap: 34px;
+}
+
+#error-recovery{
+    visibility: hidden;
+    text-align: center;
+    color: #000;
+}
+
+#error-recovery h4{
+    font-family: var(--fonteTitulo);
+    font-size: 1.875rem;
+    margin-top: 34px;
+    max-width: 484px;
+}
+
+#error-recovery ul{
+    margin-top: .625rem;
+}
+
+#error-recovery ul li{
+    font-family: var(--fonteTexto);
+    list-style: none;
 }
 
 section#formulario .form-control{

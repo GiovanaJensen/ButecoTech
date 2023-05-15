@@ -46,7 +46,11 @@
     </main>
 
     <section id="formulario">
-        <div>
+        <div id="error-recovery">
+            <h4>Avisos - Dados Inválidos</h4>
+            <ul id="error-list"></ul>
+        </div>
+        <div id="container-form">
             <div id="form">
                 <h4>Preencha os campos</h4>
                 <form>
@@ -149,6 +153,7 @@
         </section>
     </footer>
     <script src="js/script.js"></script>
-    <script src="js/form.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    <script src='js/form.js'></script>
 </body>
 </html>
