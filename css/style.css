@@ -315,7 +315,7 @@ section#episodios p {
     font-size: 1.5rem;
     line-height: 2.25rem;
     text-align: center;
-    color: #9FA3A6;
+    color: var(--corSecundaria);
     margin-top: 64px;
     margin-bottom: 35px;
 }
